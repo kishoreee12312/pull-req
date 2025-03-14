@@ -1,12 +1,16 @@
-import java.lang.Math;
-class Squrt
-  {
-   public static void main(String args[])
-         {
-           double x=5;
-           double y;
-           y=Math.sqrt(x);
-           System.out.println("y="+y);
-          }
-   }
-          
+public class Fibonacci {
+   public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    public static void main(String[] args) {
+        int n = 10; 
+        System.out.print("Fibonacci Series (Recursive): ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(fibonacci(i) + " ");
+        }
+    }
+}
